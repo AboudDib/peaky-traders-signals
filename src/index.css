@@ -8,89 +8,100 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark Luxury Theme - Fully Customizable Color Variables */
+    /* TODO: Adjust these colors to match your logo palette */
+    
+    /* Base Colors */
+    --background: 220 25% 8%;           /* Deep navy background */
+    --foreground: 210 20% 95%;          /* Light text */
+    --card: 220 22% 12%;                /* Card background */
+    --card-foreground: 210 20% 95%;     
+    
+    /* Primary - Emerald Green (Trust, Growth, Money) */
+    --primary: 158 64% 52%;             /* Vibrant emerald */
+    --primary-foreground: 220 25% 8%;   
+    --primary-glow: 158 64% 62%;        /* Lighter for glow effects */
+    
+    /* Secondary - Gold Accents (Premium, Luxury) */
+    --secondary: 45 93% 58%;            /* Rich gold */
+    --secondary-foreground: 220 25% 8%;
+    
+    /* Accent - Electric Blue */
+    --accent: 210 100% 60%;
+    --accent-foreground: 220 25% 8%;
+    
+    /* Muted Elements */
+    --muted: 220 20% 15%;
+    --muted-foreground: 210 15% 65%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 95%;
+    
+    /* UI Elements */
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 158 64% 52%;
+    --popover: 220 22% 12%;
+    --popover-foreground: 210 20% 95%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(158 64% 52%), hsl(158 64% 62%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 93% 58%), hsl(38 92% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(220 25% 8%) 0%, hsl(220 25% 12%) 100%);
+    
+    /* Shadows & Glows */
+    --shadow-primary: 0 10px 40px -10px hsl(158 64% 52% / 0.4);
+    --shadow-gold: 0 10px 40px -10px hsl(45 93% 58% / 0.3);
+    --glow-primary: 0 0 40px hsl(158 64% 52% / 0.5);
+    --glow-gold: 0 0 40px hsl(45 93% 58% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    /* Sidebar (if needed later) */
+    --sidebar-background: 220 22% 12%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 158 64% 52%;
+    --sidebar-primary-foreground: 220 25% 8%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 158 64% 52%;
   }
 
+  /* Dark mode is default, but keeping this for theme toggle option */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 220 25% 8%;
+    --foreground: 210 20% 95%;
+    --card: 220 22% 12%;
+    --card-foreground: 210 20% 95%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 220 25% 8%;
+    --secondary: 45 93% 58%;
+    --secondary-foreground: 220 25% 8%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 210 15% 65%;
+    --accent: 210 100% 60%;
+    --accent-foreground: 220 25% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 95%;
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 158 64% 52%;
+    --popover: 220 22% 12%;
+    --popover-foreground: 210 20% 95%;
+    --sidebar-background: 220 22% 12%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 158 64% 52%;
+    --sidebar-primary-foreground: 220 25% 8%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 158 64% 52%;
   }
 }
 
@@ -100,6 +111,40 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-secondary to-[hsl(38_92%_50%)] bg-clip-text text-transparent;
+  }
+  
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-gold {
+    box-shadow: var(--glow-gold);
+  }
+  
+  .glass {
+    @apply bg-card/50 backdrop-blur-xl border border-border/50;
+  }
+  
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+                var(--gradient-primary) border-box;
+    border: 2px solid transparent;
   }
 }
