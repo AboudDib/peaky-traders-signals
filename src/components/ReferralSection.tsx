@@ -109,7 +109,7 @@ const ReferralSection = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -10, scale: 1.02 }}
-              className={`glass p-8 rounded-2xl relative overflow-hidden group ${
+              className={`glass p-8 rounded-2xl relative group ${
                 card.featured ? "md:scale-105 border-2 border-secondary/50" : ""
               }`}
             >
@@ -163,7 +163,7 @@ const ReferralSection = () => {
 
               {/* Hover gradient overlay */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`}
+                className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none rounded-2xl overflow-hidden`}
               />
             </motion.div>
           ))}
