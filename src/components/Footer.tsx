@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Send, Twitter, Instagram, Facebook } from "lucide-react";
+import peakyLogo from "@/assets/peaky-traders-logo.png";
 
 const Footer = () => {
   const [ref, inView] = useInView({
@@ -23,13 +24,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              {/* TODO: Insert Peaky Traders logo link here */}
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center font-bold text-xl">
-                PT
-              </div>
-              <span className="text-xl font-heading font-bold text-gradient-primary">
-                Peaky Traders
-              </span>
+              <img 
+                src={peakyLogo} 
+                alt="Peaky Traders Logo" 
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Trade smarter, with confidence and clarity. Join our community of
