@@ -12,7 +12,7 @@ const JoinSection = () => {
   return (
     <section id="join" className="py-24 bg-background relative overflow-hidden">
       {/* Animated background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.15),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--accent)/0.15),transparent_70%)]" />
       <motion.div
         animate={{
           scale: [1, 1.2, 1],
@@ -23,7 +23,7 @@ const JoinSection = () => {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/20 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -40,7 +40,7 @@ const JoinSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-6"
           >
-            <Sparkles className="w-16 h-16 text-primary mx-auto mb-4 animate-pulse" />
+            <Sparkles className="w-16 h-16 text-accent mx-auto mb-4 animate-pulse" />
           </motion.div>
 
           <motion.h2
@@ -50,7 +50,7 @@ const JoinSection = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-black mb-6 leading-tight"
           >
             Ready to{" "}
-            <span className="text-gradient-primary">Trade Smarter</span>?
+            <span className="text-gradient-green">Trade Smarter</span>?
           </motion.h2>
 
           <motion.p
@@ -72,7 +72,7 @@ const JoinSection = () => {
           >
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-12 py-8 shadow-primary hover:shadow-xl transition-all duration-300 animate-pulse-glow group"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-12 py-8 glow-green hover:shadow-xl transition-all duration-300 group"
             >
               <Send className="mr-2 group-hover:translate-x-1 transition-transform duration-300" size={24} />
               Join Telegram Now
@@ -90,19 +90,19 @@ const JoinSection = () => {
             </h3>
             <ul className="text-left text-muted-foreground space-y-3">
               <li className="flex items-start gap-3">
-                <span className="text-primary text-2xl">✓</span>
+                <span className="text-accent text-2xl">✓</span>
                 <span>Real-time Forex signals with clear entry and exit points</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary text-2xl">✓</span>
+                <span className="text-accent text-2xl">✓</span>
                 <span>Detailed trade breakdowns and market analysis</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary text-2xl">✓</span>
+                <span className="text-accent text-2xl">✓</span>
                 <span>Risk management guidance from professional traders</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary text-2xl">✓</span>
+                <span className="text-accent text-2xl">✓</span>
                 <span>24/7 community support and exclusive insights</span>
               </li>
             </ul>

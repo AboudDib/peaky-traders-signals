@@ -65,7 +65,7 @@ const Header = () => {
           ))}
           <Button
             variant="default"
-            className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold shadow-primary hover:shadow-lg transition-all duration-300"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold glow-green hover:shadow-lg transition-all duration-300"
             onClick={() => scrollToSection("#join")}
           >
             Join Telegram
@@ -101,7 +101,7 @@ const Header = () => {
             ))}
             <Button
               variant="default"
-              className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold w-full"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold w-full"
               onClick={() => scrollToSection("#join")}
             >
               Join Telegram

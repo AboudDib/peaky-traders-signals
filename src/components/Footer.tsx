@@ -70,25 +70,25 @@ const Footer = () => {
             <div className="flex gap-4 mb-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-background transition-all duration-300"
+                className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center text-accent hover:bg-accent hover:text-background transition-all duration-300"
               >
                 <Send size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-background transition-all duration-300"
+                className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
               >
                 <Twitter size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-background transition-all duration-300"
+                className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-background transition-all duration-300"
+                className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
               >
                 <Facebook size={20} />
               </a>
@@ -107,7 +107,7 @@ const Footer = () => {
           className="border-t border-border pt-8 text-center"
         >
           <p className="text-muted-foreground mb-4">
-            With <span className="text-primary font-semibold">Peaky Traders</span>
+            With <span className="text-accent font-semibold">Peaky Traders</span>
             , you trade with confidence and clarity.
           </p>
           <p className="text-sm text-muted-foreground">

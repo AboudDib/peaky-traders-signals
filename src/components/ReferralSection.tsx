@@ -67,8 +67,8 @@ const ReferralSection = () => {
   return (
     <section id="referral" className="py-24 bg-gradient-to-b from-card to-background relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -79,7 +79,7 @@ const ReferralSection = () => {
           className="text-center mb-16"
         >
           <motion.div variants={itemVariants} className="mb-4">
-            <span className="text-primary font-heading font-bold text-lg">
+            <span className="text-accent font-heading font-bold text-lg">
               Join Our Community
             </span>
           </motion.div>
