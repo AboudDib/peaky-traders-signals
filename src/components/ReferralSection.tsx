@@ -16,8 +16,8 @@ const ReferralSection = () => {
       description:
         "Join our free community to get started. Access daily market insights, basic signals, and connect with fellow traders.",
       buttonText: "Join Free Group",
-      link: "", // TODO: Insert Free Telegram referral link
-      gradient: "from-primary to-primary-glow",
+      link: "https://t.me/+GQuzgaQDZ0k0MjNk",
+      gradient: "from-accent to-[hsl(152_100%_28%)]",
       badge: "Free",
     },
     {
@@ -26,8 +26,8 @@ const ReferralSection = () => {
       description:
         "Unlock premium signals, detailed trade breakdowns, priority support, and advanced market analysis. Take your trading to the next level.",
       buttonText: "Join Premium",
-      link: "", // TODO: Insert Paid Telegram referral link
-      gradient: "from-secondary to-[hsl(38_92%_50%)]",
+      link: "https://t.me/+GQuzgaQDZ0k0MjNk",
+      gradient: "from-primary to-secondary",
       badge: "Premium",
       featured: true,
     },
@@ -37,8 +37,8 @@ const ReferralSection = () => {
       description:
         "Trade with our recommended broker CFI. Get exclusive benefits, competitive spreads, and seamless integration with our signals.",
       buttonText: "Sign Up with CFI",
-      link: "", // TODO: Insert CFI referral link
-      gradient: "from-accent to-[hsl(210_100%_70%)]",
+      link: "https://cfi.trade/en/lb",
+      gradient: "from-primary to-primary-glow",
       badge: "Partner",
     },
   ];

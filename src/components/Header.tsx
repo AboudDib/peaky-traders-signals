@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import peakyLogo from "@/assets/peaky-traders-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,18 +40,16 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo Placeholder */}
+        {/* Logo */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-3"
+          className="flex items-center gap-2"
         >
-          {/* TODO: Insert Peaky Traders logo link here */}
-          <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center font-bold text-xl">
-            PT
-          </div>
-          <span className="text-xl font-heading font-bold text-gradient-primary">
-            Peaky Traders
-          </span>
+          <img 
+            src={peakyLogo} 
+            alt="Peaky Traders Logo" 
+            className="h-12 w-auto object-contain"
+          />
         </motion.div>
 
         {/* Desktop Navigation */}
