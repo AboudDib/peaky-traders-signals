@@ -46,12 +46,12 @@ const TrackRecordSection = () => {
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute top-1/4 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"
+        className="absolute top-1/4 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-        className="absolute bottom-1/4 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"
+        className="absolute bottom-1/4 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -63,7 +63,7 @@ const TrackRecordSection = () => {
           className="text-center mb-16"
         >
           <div className="mb-4">
-            <span className="text-primary font-heading font-bold text-lg">
+            <span className="text-accent font-heading font-bold text-lg">
               Our Results
             </span>
           </div>
@@ -106,8 +106,8 @@ const TrackRecordSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-card/50 p-6 rounded-xl border border-primary/30">
-              <h4 className="text-xl font-heading font-bold mb-2 text-primary">
+            <div className="bg-card/50 p-6 rounded-xl border border-accent/30">
+              <h4 className="text-xl font-heading font-bold mb-2 text-accent">
                 Recent Highlights
               </h4>
               <p className="text-muted-foreground">
@@ -116,8 +116,8 @@ const TrackRecordSection = () => {
                 members following our signals with recommended risk management.
               </p>
             </div>
-            <div className="bg-card/50 p-6 rounded-xl border border-secondary/30">
-              <h4 className="text-xl font-heading font-bold mb-2 text-secondary">
+            <div className="bg-card/50 p-6 rounded-xl border border-primary/30">
+              <h4 className="text-xl font-heading font-bold mb-2 text-primary">
                 Member Testimonials
               </h4>
               <p className="text-muted-foreground">
@@ -187,10 +187,10 @@ const StatCard = ({
       whileHover={{ y: -5, scale: 1.03 }}
       className="glass p-8 rounded-2xl text-center group cursor-pointer"
     >
-      <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors duration-300">
-        <Icon className="w-8 h-8 text-primary" />
+      <div className="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 transition-colors duration-300">
+        <Icon className="w-8 h-8 text-accent" />
       </div>
-      <div className="text-4xl md:text-5xl font-heading font-black text-gradient-primary mb-2">
+      <div className="text-4xl md:text-5xl font-heading font-black text-gradient-green mb-2">
         {count}
         {suffix}
       </div>

@@ -47,12 +47,12 @@ const HeroSection = () => {
       <motion.div
         animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"
+        className="absolute top-20 right-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-20 left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"
+        className="absolute bottom-20 left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"
       />
 
       <motion.div
@@ -63,7 +63,7 @@ const HeroSection = () => {
         className="container mx-auto px-4 text-center z-10"
       >
         <motion.div variants={itemVariants} className="mb-6">
-          <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary text-sm font-semibold">
+          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-accent text-sm font-semibold">
             Premium Forex Signals
           </span>
         </motion.div>
@@ -91,7 +91,7 @@ const HeroSection = () => {
         >
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 shadow-primary hover:shadow-lg transition-all duration-300 animate-pulse-glow"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-6 glow-green hover:shadow-lg transition-all duration-300"
             onClick={scrollToJoin}
           >
             <Zap className="mr-2" size={20} />
@@ -120,16 +120,19 @@ const HeroSection = () => {
               icon: TrendingUp,
               title: "95%+ Win Rate",
               description: "Consistently accurate signals",
+              color: "text-accent",
             },
             {
               icon: Zap,
               title: "Real-Time Alerts",
               description: "Never miss an opportunity",
+              color: "text-primary",
             },
             {
               icon: Shield,
               title: "Risk Management",
               description: "Trade with confidence",
+              color: "text-foreground",
             },
           ].map((feature, index) => (
             <motion.div
@@ -138,7 +141,7 @@ const HeroSection = () => {
               whileHover={{ y: -5, scale: 1.02 }}
               className="glass p-6 rounded-xl"
             >
-              <feature.icon className="w-12 h-12 text-primary mb-4 mx-auto" />
+              <feature.icon className={`w-12 h-12 ${feature.color} mb-4 mx-auto`} />
               <h3 className="text-xl font-heading font-bold mb-2">
                 {feature.title}
               </h3>

@@ -14,28 +14,28 @@ const ServicesSection = () => {
       title: "Premium Forex Signals",
       description:
         "Receive real-time, high-accuracy trading signals with clear entry, stop-loss, and take-profit levels. Our signals are backed by deep market analysis and delivered instantly to your Telegram.",
-      gradient: "from-primary to-primary-glow",
+      gradient: "from-accent to-emerald",
     },
     {
       icon: BarChart3,
       title: "Trade Breakdowns",
       description:
         "Understand the 'why' behind every signal. We provide detailed market analysis, technical insights, and rationale for each trade, helping you become a better trader.",
-      gradient: "from-secondary to-[hsl(38_92%_50%)]",
+      gradient: "from-primary to-secondary",
     },
     {
       icon: BookOpen,
       title: "Market Insights",
       description:
         "Stay ahead with daily market updates, trend analysis, and economic event notifications. Know what's moving the markets and why it matters for your trades.",
-      gradient: "from-accent to-[hsl(210_100%_70%)]",
+      gradient: "from-muted-foreground to-foreground",
     },
     {
       icon: Shield,
       title: "Risk Management Guidance",
       description:
         "Learn professional risk management strategies that protect your capital. We teach you how to size positions, set stops, and manage your portfolio like a pro trader.",
-      gradient: "from-primary to-secondary",
+      gradient: "from-accent to-emerald",
     },
   ];
 
@@ -63,8 +63,8 @@ const ServicesSection = () => {
   return (
     <section id="services" className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -75,7 +75,7 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <motion.div variants={itemVariants} className="mb-4">
-            <span className="text-primary font-heading font-bold text-lg">
+            <span className="text-accent font-heading font-bold text-lg">
               What We Offer
             </span>
           </motion.div>
@@ -133,7 +133,7 @@ const ServicesSection = () => {
         >
           <div className="glass max-w-4xl mx-auto p-8 rounded-2xl">
             <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              <span className="text-gradient-primary">Results-Driven</span> Approach
+              <span className="text-gradient-green">Results-Driven</span> Approach
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Our focus is simple: help you make confident, profitable trades. Every

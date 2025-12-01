@@ -40,7 +40,7 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <motion.div variants={itemVariants} className="mb-4">
-            <span className="text-primary font-heading font-bold text-lg">
+            <span className="text-accent font-heading font-bold text-lg">
               About Us
             </span>
           </motion.div>
@@ -93,8 +93,8 @@ const AboutSection = () => {
               whileHover={{ y: -10, scale: 1.03 }}
               className="glass p-8 rounded-2xl gradient-border hover:shadow-primary transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
-                <card.icon className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                <card.icon className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-2xl font-heading font-bold mb-4">
                 {card.title}
